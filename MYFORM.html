@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+         
+    </style>
+</head>
+
+<body>
+  <script>
+    function valueSender()
+    {
+      var a=101;
+      localStorage.setItem("myValue", a);
+      window.location.href="submitpage.html";
+    }
+  </script>
+  
+  <form action="/action_page.php jumbotron" method="post" action="submitpage.html">
+        <fieldset>
+            <h1 class="display-1">Registration Form:</h1>
+            
+            <label for="Username">First Name</label><br>
+            <input type="text" id="uname" name="uname"><br><br>
+            <label for="Username">Second Name</label><br>
+            <input type="text" id="uname2" name="uname2"><br><br>
+            <label for="bday">Choose Your Birthdate:</label><br>
+            <input type="date" id="bday" name="bday"><br><br>
+            <label for="bday">Gender:</label><br>
+            <input type="gender" id="Gender" name="Gender"><br><br>
+            
+            
+            <form class="form-inline">
+              <label class="sr-only" for="inlineFormInputName2">Enter Email</label><br>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter Email"><br><br>
+            
+              <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label><br>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username"><br>
+              </div><br><br>
+            
+            
+            
+            </form>
+
+            <label for="pin">Password</label><br>
+            <input type="password" id="pin" name="pin" value=""><br><br>
+            <label for="pin">Confirm Password</label><br>
+            <input type="password" id="pin" name="pin" value=""><br><br>
+
+            <form action="submitpage.html">
+
+              <button onclick="submit()">Register</button>
+
+            </form>
+
+        </fieldset>
+    </form>
+</body>
